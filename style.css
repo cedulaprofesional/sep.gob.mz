@@ -1,0 +1,1113 @@
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/*                                      GENERAL SETTINGS                                    */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+* {
+   font-family: Roboto, sans-serif;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+   caret-color: transparent;
+   scrollbar-width: thin;
+   scrollbar-color: rgb(79, 76, 76) rgb(54, 53, 52);
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+*::before,
+*::after {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
+
+* a {
+    text-decoration: none;
+}
+/* **************************************************************************************** */
+/*                             SETTINGS FOR SCROLLBAR MODDING                               */
+/* **************************************************************************************** */    
+*::-webkit-scrollbar {
+    width: 10px;   
+    background-color: rgb(55, 53, 53); /* width of the entire scrollbar */
+  }
+*::-webkit-scrollbar-thumb { 
+    background-color: rgb(122, 115, 115); /* color of the scroll thumb */ 
+    border-radius: 20px; /* roundness of the scroll thumb */ 
+      /*border: 3px solid orange;*/ /* creates padding around scroll thumb */ 
+}
+*:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(83, 83, 88);
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/*                                 WEB PAGE CONTENT SETTINGS                                */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+
+/* **************************************************************************************** */
+/*                                       BODY STYLES                                        */
+/* **************************************************************************************** */
+body {
+    overflow-x: hidden;
+    background-color: rgb(30, 28, 28);
+    padding-top: 55px;
+    padding-bottom: 200px;
+}
+
+/* **************************************************************************************** */
+/*                                 TOP SCROLLBAR TAG SECTION                                */
+/* **************************************************************************************** */
+.main_content {
+    padding-left: 240px;
+}
+.files_scroll { 
+    background-color: transparent;
+    scrollbar-color: rgb(43, 41, 41) rgb(29, 28, 28);
+    width: 100%; 
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    cursor: pointer;
+    padding: 8px 0;
+    opacity: 0.8;
+}
+.file_icon { 
+    float: left; ;
+    font-size: .9rem;
+    color: #fff;
+    margin-left: 15px;
+    border-radius: 50px; 
+    padding: 5px 13px;
+    white-space: nowrap;
+    background-color: #0e0e0e; 
+    border: .7px solid rgb(80, 76, 76);
+    transition: background-color .5s ease;
+}
+.file_icon:hover {
+    background-color: rgb(61, 58, 58);
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* **************************************************************************************** */
+/*                                      TOPBAR SETTINGS                                     */
+/* **************************************************************************************** */
+.topbar {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    border-bottom: 1px solid rgb(64, 61, 61);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------TOPBAR MIDDLE SECTION---------------------------------- */
+.middle {
+    /* background-color: red; */
+    flex: 1;
+    margin-left: 363px;
+    margin-right: 50px;
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+}
+.middle-icons {
+    width: 50px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle .lens, .lens::after {
+    background-color: rgb(50, 45, 45);
+    border-radius: 2px;
+    margin-left: 1px;
+    width: 65px;
+}
+.lens:hover {
+    background-color: rgb(77, 72, 72);
+}
+.lens:active {
+    background-color: red;
+    transition: .250ms;
+}
+.mic {
+    padding: 9px;
+    background-color: rgb(55, 48, 48);
+    border-radius: 50%;
+}
+.mic:hover {
+    background-color: rgb(87, 82, 82);
+}
+.mic:active {
+    background-color: red;
+}
+.search-bar {
+    /* outline: 2px solid rgb(1, 39, 255); */
+    flex: 1;
+    display: flex;
+    border-radius: 3px;
+}
+.search-bar:hover {
+    outline: 1px solid rgba(75, 70, 70, 0.7);
+    border-radius: 3px;
+}
+.search-bar .input {
+    background-color: rgb(30, 28, 28);
+    /* border: 1px solid rgb(23, 22, 22); */
+    font-size: 18px;
+    color: #fff;
+    flex-grow: 1;
+    height: 37px;
+    border: 0;
+    border-radius: 3px;
+    padding-left: 10px;
+    position: relative;
+    min-width: 100px;
+    /* width: 0; */
+}
+.search-bar .input:focus {
+    outline: 0;
+    border: 0;
+    caret-color: #fff;
+}
+.search-bar .input::placeholder {
+    font-size: 1rem;
+    color: #fff;
+}
+/* .input:hover::placeholder {
+    font-size: xx-large;
+} */
+.search-bar:focus-within {
+    outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+.search-bar .reset {
+    background-color: rgb(30, 28, 28);
+    padding: .5em;
+    font-size: 1rem;
+    border: 0;
+    display: none;
+}
+.search-bar:focus-within .reset {
+    display: initial;
+}
+.search-bar .fa-solid {
+    color: #fff;
+    opacity: 0.6;
+}
+.search-bar .fa-xmark:active {
+    opacity: 1;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------TOPBAR RIGHT SECTION---------------------------------- */
+.right {
+    margin-right: 18px;
+    display: flex;
+    /* flex-shrink: 0; */
+}
+.right-icons {
+    width: 52px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.right-icons:hover {
+    background-color: rgb(77, 72, 72);
+}
+.right-icons:active {
+    background-color: red;
+}
+.bell-container {
+    position: relative;
+}
+.notification {
+    position: absolute;
+    background-color: rgb(220, 19, 19);
+    top: 10px;
+    right: 7px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: .7rem;
+}
+.avatar {
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    opacity: .85;
+} 
+.main-avatar:hover {
+    background-color: transparent;
+    outline: 0;
+}
+.avatar:hover {
+    opacity: 1;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* **************************************************************************************** */
+/*                                TOOLTIPS IMPLEMENTATION                                   */
+/* **************************************************************************************** */
+
+
+/* ------TOOLTIP BY USING AN -AFTER- PSEUDO ELEMENT - "LENS" CLASS (MAGNIFYING GLASS)------ */
+.lens::after {
+    content: "Search";
+    padding: 4px 1px;
+    margin-top: 75px;
+    font-size: .8rem;
+    text-align: center;
+    position: absolute;
+    background-color: #363333;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.25s linear;
+    pointer-events: none;
+}
+.lens:hover::after {
+    opacity: 1;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------TOOLTIPS BY USING "TOOLTIP" CLASS---------------------------- */
+.middle-icons .tooltip,
+.right-icons .tooltip {
+    margin-top: 75px;
+    padding: 4px 9px;
+    font-size: .8rem;
+    text-align: center;
+    position: absolute;
+    background-color: #363333;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.25s linear;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.middle-icons:hover .tooltip,
+.right-icons:hover .tooltip {
+    opacity: 1;
+}
+/* ---------------------------------------------------------------------------------------- */
+ 
+
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/*                                    VIDEO GRID SECTION                                    */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+
+/* **************************************************************************************** */
+/*                             MAIN VIDEO GRID CONTAINER STYLES                             */
+/* **************************************************************************************** */
+.video-grid {
+    padding-left: 265px;
+    padding-top: 20px;
+    padding-right: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+
+/* **************************************************************************************** */
+/*                              CARD PREVIEW CONTAINER STYLES                               */
+/* **************************************************************************************** */
+.card-preview {
+    position: relative;
+    padding-bottom: 5px;
+    transition: transform .3s ease;
+}
+video {
+    position: absolute;
+    width: 100%;
+    /* z-index: -1; */
+    /* transition: z-index 2s ease; */
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+.channel {
+    cursor: pointer;
+    font-size: .78rem;
+    color: rgb(255, 4, 4);
+}
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+.stats {
+    height: 18px;
+    cursor: pointer;
+    font-size: .70rem;
+    display: flex;
+    align-items: center;
+}
+.dot {
+    padding: 0 4px;
+    font-size: 1.5rem; 
+}
+.time-tag {
+    position: absolute;
+    background-color: #141313;
+    border-radius: 2px;
+    font-size: .75rem;
+    padding: 5px 5px;
+    bottom: 101px;
+    right: 4px;
+}
+.icon-avatar {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.video-title {
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    max-width: 17em;
+    padding-right: 5px;
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.video-data {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+.channel-avatar {
+    display: flex;
+    justify-content: center;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------ADDED BOTTOM CONTAINER SETTINGS----------------------------- */
+.extra-container {
+    position: absolute;
+    background-color: rgb(17, 16, 16);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: -75px;
+    opacity: 0;
+}
+.btn {
+    margin: 0 10px;
+    border-radius: 3px;
+    padding: 3px 0;
+    background-color: #383232;
+    font-size: .7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.b1 {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.b2 {
+    margin-bottom: 10px;
+}
+.extra-icon {
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ----------------------HOVERING SETTINGS FOR "CARD PREVIEW" ELEMENT---------------------- */
+.card-preview:hover {
+    background-color: rgb(17, 16, 16);
+    outline: 1px solid rgb(0, 0, 0);
+}
+.card-preview:hover, 
+.card-preview:hover video,
+.card-preview:hover .video-title,
+.card-preview:hover .channel,
+.card-preview:hover .stats,
+.card-preview:hover .extra-container  {
+    transition-delay: 2s;
+    transform: scale(1.2);
+    z-index: 10;
+}
+.card-preview:hover video {
+    background-color: transparent;
+    transition-delay: 4s;
+    transform: scaleX(1);
+    width: 100%;
+    opacity: 1;
+    z-index: 20;
+}
+.card-preview:hover .video-title, 
+.card-preview:hover .channel,
+.card-preview:hover .stats  {
+    font-size: .8rem;
+    transform: scale(1);
+}
+.card-preview:hover .video-title {
+    font-size: .75rem;
+    line-height: 1.11rem;
+}
+.card-preview:hover .stats {
+    font-size: .57rem;
+}
+.card-preview:hover .extra-container {
+    opacity: 1;
+    transform: scale(1);
+}
+.btn:hover  p {
+    color: red;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* --------------------STYLES FOR "CARD PREVIEW" -AFTER- PSEUDO ELEMENT-------------------- */
+.card-preview::after {
+    content: "Keep hovering to preview";
+    position: absolute;
+    font-size: .80rem;
+    outline: 1px solid rgb(58, 54, 54);
+    background-color: black;
+    border-radius: 2px;
+    bottom: 101px;
+    right: 4px;
+    border: #363333;
+    padding: 4px 4px;
+    opacity: 0;
+}
+
+/* --------------HOVERING ANIMATION FOR "CARD PREVIEW" -AFTER- PSEUDO ELEMENT-------------- */
+.card-preview:hover::after {
+    animation: opacity 2.3s;
+}
+@keyframes opacity {
+    0% { opacity: 0; } 
+    15% { opacity: 0; } 
+    40% { opacity: 1; } 
+    85% { opacity: 1; } 
+    100% { opacity: 0; }
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/*                                       M  E  N  U  S                                      */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+/* ---------------------------------HAMBURGUER YOUTUBE MENU-------------------------------- */
+
+.left {
+    position: fixed;
+    margin-left: 8px;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.left-icons {
+    padding-left: 7px;
+
+}
+.youtube-icon {
+    padding-left: 5px;
+    width: 92px;
+} 
+.icon {
+    width: 26px;
+    height: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: .8;
+    cursor: pointer;
+}
+.left-icons:hover .icon {
+    background-color: #443c3c;
+}
+.left-icons:active .icon {
+    background-color: #585151;
+}
+#switch-menu {
+    position: absolute; 
+    opacity: 0; 
+    height: 0;
+}
+#switch-menu:checked ~ .wide-menu {
+    width: 0;
+}
+#switch-menu:checked ~ .thin-menu {
+    visibility: visible;
+}
+#switch-menu:checked ~ .video-grid {
+    padding-left: 95px;
+}
+#switch-menu:checked ~ .main_content  {
+    padding-left: 70px;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+/* **************************************************************************************** */
+/*                                    ASIDE LEFT-THIN_MENU                                  */
+/* **************************************************************************************** */
+.thin-menu, .wide-menu {
+    background-color: rgb(24, 22, 22);
+    position: fixed;
+    width: 70px;
+    left: 0;
+    bottom: 0;
+    top: 57px;
+}
+.thin-menu {
+    visibility: hidden;
+}
+.tm {
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tm:hover {
+    background-color: rgb(77, 72, 72);
+}
+.tm:active {
+    background-color: red;
+}
+.thin-menu-icon-name {
+    font-size: .65rem;
+    margin-top: 7px;
+} 
+.thin-menu-icon {
+    width: 24px;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* **************************************************************************************** */
+/*                                   ASIDE LEFT-WIDE_MENU                                   */
+/* **************************************************************************************** */
+.wide-menu {
+    overflow-y: scroll;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    /* visibility: hidden; */
+}
+.block-1, 
+.block-2, 
+.block-3, 
+.block-4, 
+.block-5, 
+.block-6 {
+    border-top: 1px solid rgb(41, 38, 38);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.block-1 {
+    border-top: 0;
+}
+.menu-icons {
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+.menu-icons:hover {
+    background-color: #2d2f31;
+}
+.menu-icons:hover p {
+    color: red;
+}
+.menu-icons img {
+    width: 23px;
+    height: 23px;
+    margin-left: 25px;
+    margin-right: 22px;
+    border-radius: 50%;
+}
+.icons-leyend {
+    font-size: .85rem;
+}
+/* ---------------------------------------------------------------------------------------  */
+
+
+/* --------------------LEFT DROPDOWN SUBSCRIPTIONS NAV BLOCK (BLOCK-3)--------------------- */
+.nav {
+    width : 100%; 
+    position: relative;
+}
+.nav li a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ancor {
+    padding-left: 20px;
+    color: #fff;
+}
+.dropdown {
+    padding-bottom: 30px;
+    font-size: .9rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 311px;
+  }
+.dropdown li {
+    padding : 10px;
+  }
+.span, .span1 {
+    /* font-variant : small-caps; */
+    background : #2d2f31; 
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor : pointer;
+    color : white;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+.span::after, .span1::after {
+    padding-left: 20px;
+    content: "Show more...";
+    font-size : .95rem;
+    float: right;
+    right: 10%;
+}
+.span img, .span1 img {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+.span:hover {
+    color: red;
+}
+.span1 { 
+    opacity: 0;
+    z-index: 1;
+}
+.subs {
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: .87rem;
+    font-weight: bold;
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
+}
+.image-channel {
+    margin-left: 12px;
+    width: 25px;
+    border-radius: 50%;
+}
+.channel-block {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.channel-block:hover {
+    background-color: #2d2f31; 
+    }
+.channel-block:hover a {
+    color: red;    
+}
+.span1:hover {
+    color: red;
+}
+.span1::after {
+    content: "Show less...";
+}
+
+/* ---------------------------CHECKBOX "CHECKED" STATE BEHAVIOR--------------------------- */
+#checkbox {
+    position: absolute; 
+    opacity: 0; 
+    height: 0;
+}
+#checkbox:checked + .dropdown {
+    height: initial; 
+}
+#checkbox:checked + .dropdown .span1 {
+    opacity: 1;
+    z-index: 10;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+.block-4 {
+    padding-top: 0;
+}
+.block-4 .subs {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+/* BLOCK-5 IS FINE AT THIS POINT */
+
+
+/* -------------------------------WIDE LEFT MENU FINAL INFO SECTION-----------------------------  */
+.block-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data-container {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.data-div {
+    padding-left: 18px;
+    padding-bottom: 5px;
+    opacity: .75;
+}
+.data-div a,
+.data-div p  {
+    padding-left: 7px;
+}
+.data-div p {
+    font-weight: lighter;
+    opacity: .7;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------ACCOUNT DROPDOWN MENU---------------------------------- */
+
+
+/* ----------------------------NAV CONTAINER IN UNCHECKED STATE---------------------------- */
+ul { 
+    list-style: outside none; 
+    list-style-type: none;
+    padding: 0;
+}
+.account-nav {
+    background: transparent;
+    position: relative;
+    width: 0;
+    height: 0;
+    width : 50px; 
+}
+.label::after {
+    padding-top: 11px;
+    height: 46px;
+    float: right;
+    right: 10%;
+    content:url(/Thumbnails-youtube/avatar-menu.png);
+    cursor: pointer;
+    opacity: .8;
+}
+.label:hover::after {
+    opacity: 1;
+}
+.slide {
+    height: 0;
+    transition: height .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: hidden;
+    /* width: 0;
+    transition: width .150s cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+.slide li {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.account-li {
+    display: flex;
+    align-items: center;
+}
+.account-li:hover {
+    background-color: #363333;
+    color: red;
+}
+.account-li p {
+    font-size: .9rem;
+    padding-left: 1rem;
+    opacity: .7;
+}
+.account-li:hover p {
+    color: red;
+    opacity: 1;
+}
+.li {
+    margin-bottom: 12px;
+}
+.lii {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.icon-item {
+    width: 25px;
+    height: 25px;
+    opacity: .7;
+}
+.p-relative {
+    position: relative;
+}
+.right-arrow {
+    position: absolute;
+    right: 20px;
+}
+.account-block {
+    border-bottom: 1px solid rgb(38, 36, 36);
+}
+.account-block li {
+    cursor: pointer;
+    padding-left: 6px;
+}
+.padding-block1 {
+    padding-top: 93px;
+}
+.padding-block2 {
+    padding-top: 11px;
+}
+.last-menu-block p {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0;
+}
+.account {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 22px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    border-bottom: 1px solid rgb(38, 36, 36);
+}
+.account-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.account-name {
+    font-size: 1.1rem;
+}
+.account-manage {
+    font-size: .9rem;
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 17px ;
+}
+
+/* -----------------------------NAV CONTAINER IN CHECKED STATE----------------------------- */
+#touch {
+    position: absolute; 
+    opacity: 0; 
+    height: 0;
+}    
+#touch:checked + .slide {
+    background: #141313; 
+    height: 585px; 
+    width: 300px; 
+    border-radius: 3px;
+    margin-left: -290px;
+    overflow-y: visible;
+} 
+#touch:checked + .slide .account{
+    position: fixed;
+    background-color: #141313;
+    width: 270px;
+    cursor: pointer;
+    z-index: 50;
+}
+#touch:checked + .slide .account:hover {
+    background-color: #282828;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ------------------------MEDIA QUERYS FOR DIFFERENT SCREEN SIZES------------------------- */
+@media only screen
+and (min-device-width : 100px) 
+and (max-device-width : 640px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main_content {
+        padding-left: 0;
+    }
+    .left {
+        margin: 0;
+        padding: 0;
+        top: 17px
+    }
+    .left-icons {
+        padding-left: 7px;
+    }
+    .hamburguer {
+        display: none
+    }
+    .youtube-icon {
+        padding: 0;
+        width: 80px;
+    }
+    .middle {
+        min-width: 100px;
+        margin-left: 110px;
+        margin-right: 0;
+     }
+    .middle-icons {
+        display: none;
+    }
+    .right-icons {
+        display: none;
+    }
+    .wide-menu {
+        display: none;
+    }
+    .thin-menu {
+        visibility: initial;
+        height: 60px;
+        top: initial;
+        right: 0;
+        width: initial;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        z-index: 200;
+    }
+    .tm {
+        height: initial;        
+    }
+    #switch-menu:checked ~ .video-grid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #switch-menu:checked ~ .main_content  {
+        padding-left: 0;
+    }
+    * {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    *::-webkit-scrollbar {
+        display: none;
+      }
+}
+
+@media only screen
+and (min-device-width : 641px) 
+and (max-device-width : 860px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main_content {
+        padding-left: 0;
+    }
+    .left {
+        margin: 0;
+        padding: 0;
+        top: 17px
+    }
+    .left-icons {
+        padding-left: 7px;
+    }
+    .hamburguer {
+        display: none
+    }
+    .youtube-icon {
+        padding: 0;
+        width: 80px;
+    }
+    .middle {
+        min-width: 100px;
+        max-width: 100%;
+        margin-left: 115px;
+        margin-right: 0;
+     }
+    .middle-icons {
+        display: none;
+    }
+    .right-icons {
+        display: none;
+    }
+    .wide-menu {
+        display: none;
+    }
+    .thin-menu {
+        visibility: initial;
+        height: 55px;
+        top: initial;
+        right: 0;
+        width: initial;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        z-index: 200;
+    }
+    .tm {
+        height: initial;        
+    }
+    #switch-menu:checked ~ .video-grid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #switch-menu:checked ~ .main_content  {
+        padding-left: 0;
+    }
+    * {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    *::-webkit-scrollbar {
+        display: none;
+      }
+}
+@media only screen
+and (min-device-width : 861px) 
+and (max-device-width : 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* ---------------------------------------------------------------------------------------- */
+
+

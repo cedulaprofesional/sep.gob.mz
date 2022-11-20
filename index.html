@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ****************************************************************************** --> 
+<!--                                GOOGLE FONTS LINK                               -->
+<!-- ****************************************************************************** --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- ****************************************************************************** --> 
+<!--                                FONT AWESOME LINK                               -->
+<!-- ****************************************************************************** --> 
+    <script src="https://kit.fontawesome.com/200415a7b2.js" crossorigin="anonymous"></script>
+
+<!-- ****************************************************************************** --> 
+<!--                             CASCADE STYLE SHEET LINK                           -->
+<!-- ****************************************************************************** --> 
+    <link rel="stylesheet" href="style.css">
+
+<!-- ****************************************************************************** --> 
+<!--                                TAB DISPLAYED NAME                              -->
+<!-- ****************************************************************************** --> 
+    <title>YouTube</title>
+</head>
+
+<body>
+    <main>
+
+<!-- ****************************************************************************** -->
+<!-- ****************************************************************************** -->
+<!-- *                              T  O  P  B  A  R                              * -->
+<!-- ****************************************************************************** -->
+<!-- ****************************************************************************** --> 
+    <section class="topbar">
+
+<!-- ****************************************************************************** --> 
+<!--                             TOPBAR - MIDDLE SECTION                            -->
+<!-- ****************************************************************************** --> 
+    <form class="middle">
+        <div class="search-bar">
+            <button class="reset" type="reset" value="reset">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input class="input" type="text" placeholder="Search">
+            <button class="reset" type="reset" value="reset">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="middle-icons lens">
+            <img class="icon search-lens" src="icons/3tb.svg" alt="">
+        </div>
+        <div class="middle-icons">
+            <img class="icon mic" src="icons/4tb.svg" alt="">
+            <p class="tooltip">Search by voice</p>
+        </div>
+    </form>
+
+<!-- ****************************************************************************** --> 
+<!--                             TOPBAR - RIGHT SECTION                             -->
+<!-- ****************************************************************************** --> 
+    <section class="right">
+        <div class="right-icons">
+            <img class="icon" src="icons/5tb.svg" alt="">
+            <p class="tooltip">Create</p>
+        </div>
+        <div class="right-icons">
+            <img class="icon" src="icons/6tb.svg" alt="">
+            <p class="tooltip">Youtube apss</p>
+        </div>
+        <div class="right-icons bell-container">
+            <img class="icon" src="icons/7tb.svg" alt="">
+            <p class="notification">7</p>
+            <p class="tooltip">Notifications</p>
+        </div>
+
+<!--                           DROPDOWN USER ACCOUNT MENU                           -->
+        <nav class="account-nav">
+
+            <label for="touch"><span class="label"></span></label>               
+            <input type="checkbox" id="touch"> 
+          
+            <ul class="slide">
+              <div class="account">
+                <div class="account-icon">
+                    <img class="account-avatar" src="Thumbnails-youtube/avatar.jpg" alt="">
+                </div>
+                <div class="account-data">
+                  <p class="account-name">User Name</p>
+                  <p class="account-manage">Manage your Google Account</p>
+                </div>
+            </div>
+            <div class="account-block padding-block1 p-relative"> 
+              <li class= "account-li"><a href="#"></a>
+                <img class="icon-item" src="icons/1m.svg" alt="">
+                <p>Your channel</p>
+              </li>
+            <li class= "account-li"><a href="#"></a>
+                <img class="icon-item" src="icons/2m.svg" alt="">
+                <p>Purchases & memberships</p>
+            </li>
+            <li class= "account-li"><a href="#"></a>
+                <img class="icon-item" src="icons/3m.svg" alt="">
+                <p>Youtube Studio</p>
+            </li>
+            <li class= "account-li"><a href="#"></a>
+                <img class="icon-item" src="icons/4m.svg" alt="">
+                <p>Switch account</p>
+                <img class="icon-item right-arrow" src="icons/keyboard_arrow_right.svg" alt="">
+            </li>
+            <li class="account-li li"><a href="#"></a>
+                <img class="icon-item" src="icons/5m.svg" alt="">
+                <p>Sign out</p>
+            </li>
+            </div>
+            <div class="account-block padding-block2 p-relative"> 
+              <li class= "account-li"><a href="#"></a>
+                  <img class="icon-item" src="icons/6m.svg" alt="">
+                  <p>Appearance: Dark</p>
+                  <img class="icon-item right-arrow" src="icons/keyboard_arrow_right.svg" alt="">
+                </li>
+              <li class= "account-li"><a href="#"></a>
+                  <img class="icon-item" src="icons/7m.svg" alt="">
+                  <p>Language: English</p>
+                  <img class="icon-item right-arrow" src="icons/keyboard_arrow_right.svg" alt="">
+              </li>
+              <li class= "account-li"><a href="#"></a>
+                  <img class="icon-item" src="icons/8m.svg" alt="">
+                  <p>Location: Mexico</p>
+                  <img class="icon-item right-arrow" src="icons/keyboard_arrow_right.svg" alt="">
+              </li>
+              <li class= "account-li"><a href="#"></a>
+                  <img class="icon-item" src="icons/9m.svg" alt="">
+                  <p>Settings</p>
+              </li>
+              <li class="account-li"><a href="#"></a>
+                  <img class="icon-item" src="icons/10m.svg" alt="">
+                  <p>Your data in YouTube</p>
+              </li>
+              <li class="account-li"><a href="#"></a>
+                <img class="icon-item" src="icons/11m.svg" alt="">
+                <p>Help</p>
+              </li>
+              <li class="account-li"><a href="#"></a>
+                <img class="icon-item" src="icons/12m.svg" alt="">
+                <p>Send feedback</p>
+              </li>
+              <li class="account-li li"><a href="#"></a>
+                <img class="icon-item" src="icons/13m.svg" alt="">
+                <p>Keyboard shortcuts</p>
+              </li>
+            </div>
+            <div class="account-block last-menu-block p-relative"> 
+              <li class="account-li lii"><a href="#"></a>
+                <p>Restricted Mode: Off</p>
+                <img class="icon-item right-arrow" src="icons/keyboard_arrow_right.svg" alt="">
+              </li>
+            </div>
+            </ul>
+            
+        </nav>
+        <!-- <div class="right-icons main-avatar">   
+            <img class="avatar" src="Thumbnails-youtube//avatar.jpg" alt="">
+        </div>  -->
+    </section>
+    </section>
+
+<!-- ****************************************************************************** --> 
+<!--                           SWITCHER RHAMBURGUER MENU                            -->
+<!-- ****************************************************************************** --> 
+
+    <div class="left">
+    <label for="switch-menu">
+        <div class="left-icons">
+            <img class="icon hamburguer" src="icons/1tb.svg" alt="">
+        </div>
+    </label>
+        <div class="left-icons">
+            <a href="https://www.youtube.com" target="blank" >
+                <img class="youtube-icon" src="icons/2tb.svg" alt="" title="YouTube Home">
+            </a>
+        </div>
+    </div>               
+    <input type="checkbox" id="switch-menu"> 
+<!-- ------------------------------------------------------------------------------ --> 
+
+<!-- ****************************************************************************** --> 
+<!--                               SCROLLING TOP BAR                                -->
+<!-- ****************************************************************************** --> 
+    <section class="main_content"> 
+    <div class="files_scroll"> 
+         <table id="table"><tr></tr>
+             <td><a class="file_icon">All</a></td> 
+             <td><a class="file_icon">Extraterrestrial life</a></td> 
+             <td><a class="file_icon">Debates</a></td> 
+             <td><a class="file_icon">Mysteries</a></td> 
+             <td><a class="file_icon">Live</a></td> 
+             <td><a class="file_icon">Ancient History</a></td> 
+             <td><a class="file_icon">Music</a></td> 
+             <td><a class="file_icon">Computer program</a></td> 
+             <td><a class="file_icon">Gaming</a></td> 
+             <td><a class="file_icon">Si-fi films</a></td> 
+             <td><a class="file_icon">Felidae</a></td> 
+             <td><a class="file_icon">Characters</a></td> 
+             <td><a class="file_icon">Podcast</a></td> 
+             <td><a class="file_icon">Mixes</a></td> 
+             <td><a class="file_icon">Public speaking</a></td> 
+             <td><a class="file_icon">Action adventure games</a></td> 
+             <td><a class="file_icon">Conversation</a></td> 
+             <td><a class="file_icon">Pop music</a></td> 
+             <td><a class="file_icon">Visual arts</a></td> 
+             <td><a class="file_icon">Recently uploaded</a></td> 
+         </tr></table>
+    </div>
+    </section>
+
+
+<!-- ****************************************************************************** -->
+<!-- ****************************************************************************** -->
+<!-- *                                VIDEO GRID                                  * -->
+<!-- ****************************************************************************** -->
+<!-- ****************************************************************************** -->    
+
+    <section class="video-grid">
+        <!--                                   PREVIEW GRID                                  -->
+
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=xHan5bVZd2Y&t">
+            <video controls poster="Thumbnails-youtube/1.webp">
+                <source src="v-preview/1.mp4" type="video/mp4">
+            </video>
+            </a>
+            <a href="https://www.youtube.com/watch?v=xHan5bVZd2Y&t">
+                <img src="Thumbnails-youtube//1.webp" alt="" class="thumbnail">
+                <p class= "time-tag">2:09:45</p>
+            </a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/1.jpg" alt="" class="icon-avatar" title="SinEmbargo Al Aire">
+            </div>
+            <div class="channel-info">
+                <a href="https://www.youtube.com/watch?v=xHan5bVZd2Y&t">
+                    <div class="video-title" title="#LosPeriodistas | #EnVivo | Vida dorada de EPN | PAN consume a PRI">#LosPeriodistas | #EnVivo | Vida dorada de EPN | PAN consume a PRI</div>
+                </a>
+                <div class="channel">SinEmbargo Al Aire</div>
+                <div class="stats"><span class="data">70,600 vistas</span><span class= "dot">&#183;</span><span class="data">hace 50 minutos</span></div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=jwkeTv0PNlA"><img src="Thumbnails-youtube//2.webp" alt="" class="thumbnail"><p class= "time-tag">11:11</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/2.jpg" alt="" class="icon-avatar" title="Mundo Desconocido">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="Los Peligros del ID-Digital">Los Peligros del ID-Digital</div>
+                <div class="channel">Mundo Desconocido</div>
+                <div class="stats">94,500 vistas<span class= "dot">&#183;</span>hace 1 día</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=uNskEsBqv1E"><img src="Thumbnails-youtube//3.webp" alt="" class="thumbnail"><p class= "time-tag">43:12</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/3.jpg" alt="" class="icon-avatar" title="Canal del crimen">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="HENRY LEE LUCAS Y OTTIS TOOLE 'LA PAREJA DEL INFIERNO' (SEGUNDA PARTE)">HENRY LEE LUCAS Y OTTIS TOOLE - "LA PAREJA DEL INFIERNO" (SEGUNDA PARTE)</div>
+                <div class="channel">Canal del crimen</div>
+                <div class="stats">140,000 vistas<span class= "dot">&#183;</span>hace 7 días</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=jJDMm7TXnxU"><img src="Thumbnails-youtube//4.webp" alt="" class="thumbnail"><p class= "time-tag">14:31</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/4.jpg" alt="" class="icon-avatar" title="EL Chapucero TODAY">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="SE ACABO! SE CAE MONTAJE, 4T ORDENA ARRESTOS EN SINALOA, AMLO LOS FRENA! ALITO SUDA FRIO ULTIMA HORA">SE ACABO! SE CAE MONTAJE, 4T ORDENA ARRESTOS EN SINALOA, AMLO LOS FRENA! ALITO SUDA FRIO ULTIMA HORA</div>
+                <div class="channel">EL Chapucero TODAY</div>
+                <div class="stats">38,000 vistas<span class= "dot">&#183;</span>hace 55 minutos</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=kjP-mXiHlKE"><img src="Thumbnails-youtube//5.webp" alt="" class="thumbnail"><p class= "time-tag">19:51</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/5.jpg" alt="" class="icon-avatar" title="RIMBEL35">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="VIENE UN CAMBIO BRUTAL Y LA ÉLITE QUIERE FRENARLO - Predicciones Con ROBERT">VIENE UN CAMBIO BRUTAL Y LA ÉLITE QUIERE FRENARLO" -Predicciones Con ROBERT </div>
+                <div class="channel">RIMBEL35</div>
+                <div class="stats">234,009 vistas<span class= "dot">&#183;</span>hace 5 días</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=6qko7Nbe8YA"><img src="Thumbnails-youtube//6.webp" alt="" class="thumbnail"><p class= "time-tag">13:18</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/6.jpg" alt="" class="icon-avatar" title="FalconMasters">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="CSS Grid vs Flexbox - Cuando usar uno u otro">CSS Grid vs Flexbox - Cuando usar uno u otro</div>
+                <div class="channel">FalconMasters</div>
+                <div class="stats">125,700 vistas<span class= "dot">&#183;</span>hace 8 meses</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=6DQVU4TQxLc"><img src="Thumbnails-youtube//7.webp" alt="" class="thumbnail"><p class= "time-tag">10:11</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/7.jpg" alt="" class="icon-avatar" title="CriticSight Oficial">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="CHIP Y DALE AL RESCATE LIVE ACTION 2022 QUE SALIO BIEN RESEÑA RESUMEN">CHIP Y DALE AL RESCATE LIVE ACTION 2022 QUE SALIO BIEN RESEÑA RESUMEN</div>
+                <div class="channel">CriticSight Oficial</div>
+                <div class="stats">50,500 vistas<span class= "dot">&#183;</span>hace 9 días</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=gNzq3AlqZXc"><img src="Thumbnails-youtube//8.webp" alt="" class="thumbnail"><p class= "time-tag">21:11</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/8.jpg" alt="" class="icon-avatar" title="EL Chapucero">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="GERTZ SACA EL COBRE Y DEFIENDE A ALITO! AMENAZA CON ARRESTAR A LAYDA. ANUNCIAN NUEVO AUDIO MAÑANA">GERTZ SACA EL COBRE Y DEFIENDE A ALITO! AMENAZA CON ARRESTAR A LAYDA. ANUNCIAN NUEVO AUDIO MAÑANA</div>
+                <div class="channel">EL Chapucero</div>
+                <div class="stats">55,800 vistas<span class= "dot">&#183;</span>hace 2 horas</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=0ubhDWhXlso"><img src="Thumbnails-youtube//9.webp" alt="" class="thumbnail"><p class= "time-tag">33:13</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/9.jpg" alt="" class="icon-avatar" title="Windows DEsatendidos">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="LOS ANTIVIRUS NO SON LO QUE CREES ¿SABES CÓMO FUNCIONAN?">LOS ANTIVIRUS NO SON LO QUE CREES ¿SABES CÓMO FUNCIONAN?</div>
+                <div class="channel">Windows DEsatendidos</div>
+                <div class="stats">6,700 vistas<span class= "dot">&#183;</span>hace 1 hora</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=6Fx5z7Bxvyc"><img src="Thumbnails-youtube//10.webp" alt="" class="thumbnail"><p class= "time-tag">44:17</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/10.jpg" alt="" class="icon-avatar" title="Jaconor 73">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="Existe un conflicto entre la semilla adámica y los seres de la semilla de la Serpiente">Existe un conflicto entre la semilla adámica y los seres de la semilla de la Serpiente</div>
+                <div class="channel">Jaconor 73</div>
+                <div class="stats">64,600 vistas<span class= "dot">&#183;</span>hace 3 días</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=mK8cpBbxVaI"><img src="Thumbnails-youtube//11.webp" alt="" class="thumbnail"><p class= "time-tag">08:45</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/11.jpg" alt="" class="icon-avatar" title="SinEmbargo Al Aire">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="Alfaro le responde a Claudio X: No le entramos a “un reparto de huesos y de posiciones">Alfaro le responde a Claudio X: No le entramos a “un reparto de huesos y de posiciones”</div>
+                <div class="channel">SinEmbargo Al Aire</div>
+                <div class="stats">240 vistas<span class= "dot">&#183;</span>hace 5 minutos</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=DqaTKBU9TZk"><img src="Thumbnails-youtube//12.webp" alt="" class="thumbnail"><p class= "time-tag">12:31</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/12.jpg" alt="" class="icon-avatar" title="SuperSimpleDev">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="BEST JavaScript Tutorial for Beginners for Getting a Job 2021 (High Quality, Project Based Course)">BEST JavaScript Tutorial for Beginners for Getting a Job 2021 (High Quality, Project Based Course)</div>
+                <div class="channel">SuperSimpleDev</div>
+                <div class="stats">91,000 vistas<span class= "dot">&#183;</span>hace 1 año</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=OLYjDGOE2v8"><img src="Thumbnails-youtube//13.webp" alt="" class="thumbnail"><p class= "time-tag">22:55</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/13.jpg" alt="" class="icon-avatar" title="saselandia">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="EL CASO DE MARLIS LA HATER DE XBOX QUE HA ENGAÑADO A TODOS LOS PIPEROS DEL MUNDO">EL CASO DE MARLIS LA HATER DE XBOX QUE HA ENGAÑADO A TODOS LOS PIPEROS DEL MUNDO</div>
+                <div class="channel">saselandia</div>
+                <div class="stats">18,000 vistas<span class= "dot">&#183;</span>hace 13 horas</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=8pN_OSHTfXs"><img src="Thumbnails-youtube//14.webp" alt="" class="thumbnail"><p class= "time-tag">19:14</p></a>
+        <div class="video-data">
+            <div class="channel-avatar">
+                <img src="Thumbnails-youtube/14.jpg" alt="" class="icon-avatar" title="Kristoff Raczynski">
+            </div>
+            <div class="channel-info">
+                <div class="video-title" title="Top Gun: Maverick">Top Gun: Maverick</div>
+                <div class="channel">Kristoff Raczynski</div>
+                <div class="stats">158,700 vistas<span class= "dot">&#183;</span>hace 2 días</div>
+            </div>
+        </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=DRH9GtDY9m4"><img src="Thumbnails-youtube//15.webp" alt="" class="thumbnail"><p class= "time-tag">2:31:07</p></a>
+            <div class="video-data">
+                <div class="channel-avatar">
+                    <img src="Thumbnails-youtube/15.jpg" alt="" class="icon-avatar" title="Andrés Manuel López Obrador">
+                </div>
+                <div class="channel-info">
+                    <div class="video-title" title="Ley se ajustará para consolidar Financiera del Bienestar. Conferencia presidente AMLO">Ley se ajustará para consolidar Financiera del Bienestar. Conferencia presidente AMLO</div>
+                    <div class="channel">Andrés Manuel López Obrador</div>
+                    <div class="stats">496,000 vistas<span class= "dot">&#183;</span>hace 12 horas</div>
+                </div>
+            </div>
+        <div class="extra-container">
+            <div class="btn b1">
+                <img class="extra-icon" src="icons/8sb.svg" alt="">
+                <p>WATCH LATER</p>
+            </div>
+            <div class="btn b2">
+                <img class="extra-icon" src="icons/10sb.svg" alt="">
+                <p>ADD TO QUEUE</p>
+            </div>
+        </div>  
+        </div>
+        <div class="card-preview">
+            <a href="https://www.youtube.com/watch?v=2B5rbsOoIUE&t=5s"><img src="Thumbnails-youtube//16.webp" alt="" class="thumbnail"><p class= "time-tag">14:10</p></a>
+            <div class="video-data">
+                <div class="channel-avatar">
+                    <img src="Thumbnails-youtube/16.jpg" alt="" class="icon-avatar" title="Kevin Powell">
+                </div>
+                <div class="channel-info">
+                    <div class="video-title" title="Front-end dev reacts to mind-blowing Codepens">Front-end dev reacts to mind-blowing Codepens</div>
+                    <div class="channel">Kevin Powell</div>
+                    <div class="stats">1.4 M de vistas<span class= "dot">&#183;</span>hace 1 año</div>
+                </div>
+            </div>
+            <div class="extra-container">
+                <div class="btn b1">
+                    <img class="extra-icon" src="icons/8sb.svg" alt="">
+                    <p>WATCH LATER</p>
+                </div>
+                <div class="btn b2">
+                    <img class="extra-icon" src="icons/10sb.svg" alt="">
+                    <p>ADD TO QUEUE</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+<!-- ****************************************************************************** -->
+<!-- ****************************************************************************** -->
+<!-- *                               M  E  N  U  S                                * -->
+<!-- ****************************************************************************** -->
+<!-- ****************************************************************************** -->
+  
+
+<!-- ****************************************************************************** --> 
+<!--                           SWITCHABLE LEFT WIDE MENU                            -->
+<!-- ****************************************************************************** --> 
+
+    <section class="wide-menu">
+            
+        <div class="block-1">
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/1sb.svg" alt="">
+                    <p class="icons-leyend">Home</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/2sb.svg" alt="">
+                    <p class="icons-leyend">Explore</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/3sb.svg" alt="">
+                    <p class="icons-leyend">Shorts</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/4sb.svg" alt="">
+                    <p class="icons-leyend">Subscriptions</p>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="block-2">
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/5sb.svg" alt="">
+                    <p class="icons-leyend">Library</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/6sb.svg" alt="">
+                    <p class="icons-leyend">History</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/7sb.svg" alt="">
+                    <p class="icons-leyend">Your videos</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/8sb.svg" alt="">
+                    <p class="icons-leyend">Watch later</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/9sb.svg" alt="">
+                    <p class="icons-leyend">Liked videos</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/10sb.svg" alt="">
+                    <p class="icons-leyend">Wake up</p>
+                </div>
+            </a>
+        </div>
+
+    <!-- ----------------------DROPDOWN LEFF SUBSCRIPTIONS BLOCK----------------------- -->
+        <div class="block-3">
+        <nav class="nav">
+            
+                <label for="checkbox"><span class="span"><img src="icons/arrow down 1.svg" alt=""></span></label>               
+                <input type="checkbox" id="checkbox"> 
+            
+                <ul class="dropdown">
+                <p class="subs">SUBSCRIPTIONS</p>
+        
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/1.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/SinEmbargoAlAire">SinEmbargo Al Aire</a>
+                </li>
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/2.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/MundoDesconocidoOficial">Mundo Desconocido</a>
+                </li>
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/3.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/Canaldelcrimen">Canal del crimen</a>
+                </li>
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/4.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/ElChapuceroTODAY">EL Chapucero TODAY</a>
+                </li><li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/5.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/user/RIMBEL35">RIMBEL35</a>
+                </li>
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/6.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/FalconMasters">FalconMasters</a>
+                </li>
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/7.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/Criticsight">CriticSight Oficial</a>
+                </li>     
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/8.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/ElChapucero">EL Chapucero</a>
+                </li> 
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/9.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/user/WindowsDesatendidos">Windows Desatendidos</a>
+                </li> 
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/10.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/jaconor73">Jaconor 73</a>
+                </li>
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/12.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/SuperSimpleDev">SuperSimpleDev</a>
+                </li>  
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/13.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/saselandia">saselandia</a>
+                </li> 
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/14.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/KristoffRaczynskiCine">Kristoff Raczynski</a>
+                </li> 
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/15.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/c/lopezobrador">Andrés Manuel López Obrador</a>
+                </li> 
+        
+                <li class="channel-block">
+                    <img class="image-channel" src="Thumbnails-youtube/16.jpg" alt="">
+                    <a class="ancor" href="https://www.youtube.com/kepowob">Kevin Powell</a>
+                </li> 
+                
+                <label for="checkbox"><span class="span1"><img src="icons/arrow up.svg" alt=""></span></label>               
+                <input type="checkbox" id="checkbox"> 
+                </ul>
+            
+        </nav>
+        </div>
+
+        
+        <div class="block-4">
+        <p class="subs">MORE FROM YOUTUBE</p>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/11sb.svg" alt="">
+                    <p class="icons-leyend">Youtube Premium</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/12sb.svg" alt="">
+                    <p class="icons-leyend">Movies</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/13sb.svg" alt="">
+                    <p class="icons-leyend">Gaming</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/14sb.svg" alt="">
+                    <p class="icons-leyend">Live</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/15sb.svg" alt="">
+                    <p class="icons-leyend">Learning</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/16sb.svg" alt="">
+                    <p class="icons-leyend">Sports</p>
+                </div>
+            </a>               
+        </div>
+
+
+        <div class="block-5">
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/17sb.svg" alt="">
+                    <p class="icons-leyend">Settings</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/18sb.svg" alt="">
+                    <p class="icons-leyend">Report history</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/19sb.svg" alt="">
+                    <p class="icons-leyend">Help</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="link">
+                <div class="menu-icons">
+                    <img src="icons/20sb.svg" alt="">
+                    <p class="icons-leyend">Send feedback</p>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="block-6">
+            <div class="data-container">
+                <div class="data-div">
+                    <a href="#" class="terms">About</a>
+                    <a href="#" class="terms">Press</a>
+                    <a href="#" class="terms">Copyright</a>
+                </div>
+                <div class="data-div">
+                    <a href="#" class="terms">Contact us</a>
+                    <a href="#" class="terms">Creators</a>
+                </div>
+                <div class="data-div">
+                    <a href="#" class="terms">Advertise</a>
+                    <a href="#" class="terms">Developers</a>
+                </div>
+            </div>
+            <div class="data-container">
+                <div class="data-div">
+                    <a href="#" class="terms">Terms</a>
+                    <a href="#" class="terms">Privacy</a>
+                    <a href="#" class="terms">Policy & Safety</a>
+                </div>
+                <div class="data-div">
+                    <a href="#" class="terms">How Youtube Works</a>
+                </div>
+                <div class="data-div">
+                    <a href="#" class="terms">Test new features</a>
+                </div>
+            </div>
+            <div class="data-container">
+                <div class="data-div">
+                    <p>© 2022 Google LLC</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- ****************************************************************************** -->
+<!--                           SWITCHABLE LEFT THIN MENU                            -->
+<!-- ****************************************************************************** -->
+    <section class="thin-menu">
+        <div class="tm" title="Home">
+            <a href="https://www.youtube.com/" target="blank"><img class="thin-menu-icon" src="icons/1sb.svg" alt=""></a>
+            <p class="thin-menu-icon-name">Home</p>
+        </div>
+        <div class="tm" title="Explore">
+            <a href="https://www.youtube.com/feed/explore" target="blank"><img class="thin-menu-icon" src="icons/2sb.svg" alt=""></a>
+            <p class="thin-menu-icon-name">Explore</p>
+        </div>  
+        <div class="tm" title="Shorts">
+            <a href=""><img class="thin-menu-icon" src="icons/3sb.svg" alt=""></a>
+            <p class="thin-menu-icon-name">Shorts</p>
+        </div>
+        <div class="tm" title="Subscrptions">
+            <a href="https://www.youtube.com/feed/subscriptions" target="blank"><img class="thin-menu-icon" src="icons/4sb.svg" alt=""></a>
+            <p class="thin-menu-icon-name">Subscriptions</p>
+        </div>
+        <div class="tm" title="Library">
+            <a href="https://www.youtube.com/feed/library" target="blank"><img class="thin-menu-icon" src="icons/5sb.svg" alt=""></a>
+            <p class="thin-menu-icon-name">Library</p>
+        </div>
+    </section>
+    
+    </main>
+</body>
+</html>
